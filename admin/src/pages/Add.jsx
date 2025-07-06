@@ -90,7 +90,7 @@ const Add = ({ token }) => {
               hidden
             />
           </label>
-          <label htmlFor="image2">
+          {/* <label htmlFor="image2">
             <img
               className="w-20"
               src={
@@ -146,12 +146,12 @@ const Add = ({ token }) => {
               id="image4"
               hidden
             />
-          </label>
+          </label> */}
         </div>
       </div>
 
       <div className="w-full">
-        <p className="mb-2">Product Name</p>
+        <p className="mb-2">Item Name</p>
         <input
           onChange={(e) => setName(e.target.value)}
           value={name}
@@ -162,7 +162,7 @@ const Add = ({ token }) => {
         />
       </div>
       <div className="w-full">
-        <p className="mb-2">Product Description</p>
+        <p className="mb-2">Item Description</p>
         <textarea
           onChange={(e) => setDescription(e.target.value)}
           value={description}
@@ -175,18 +175,18 @@ const Add = ({ token }) => {
 
       <div className="flex flex-col sm:flex-row gap-2 w-full sm:gap-8">
         <div>
-          <p className="mb-2">Product Category</p>
+          <p className="mb-2">Item Category</p>
           <select
             onChange={(e) => setCategory(e.target.value)}
             className="w-full px-3 py-2 "
           >
-            <option value="Men">Men</option>
-            <option value="Women">Women</option>
-            <option value="Kids">Kids</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
           </select>
         </div>
 
-        <div>
+        {/* <div>
           <p className="mb-2">Sub Category</p>
           <select
             onChange={(e) => setSubCategory(e.target.value)}
@@ -197,21 +197,21 @@ const Add = ({ token }) => {
             <option value="Bottomwear">Bottomwear</option>
             <option value="Winterwear">Winterwear</option>
           </select>
-        </div>
+        </div> */}
 
         <div>
-          <p className="mb-2">Product Price</p>
+          <p className="mb-2">Item Price</p>
           <input
             onChange={(e) => setPrice(e.target.value)}
             value={price}
             className="w-full px-3 py-2 sm:w-[120px]"
             type="Number"
-            placeholder="25"
+            placeholder="Rs. 00.00"
           />
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <p className="mb-2">Product Sizes</p>
         <div className="flex gap-3">
           <div
@@ -300,9 +300,9 @@ const Add = ({ token }) => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex gap-2 mt-2">
+      {/* <div className="flex gap-2 mt-2">
         <input
           onChange={() => setBestseller((prev) => !prev)}
           checked={bestseller}
@@ -312,7 +312,7 @@ const Add = ({ token }) => {
         <label className="cursor-pointer" htmlFor="bestseller">
           Add to Best Seller
         </label>
-      </div>
+      </div> */}
 
       <button type="submit" className="w-28 py-3 mt-4 bg-black text-white">
         ADD
