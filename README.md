@@ -11,13 +11,13 @@ This is a community-centered initiative developed as part of our university curr
 Help Rustic Kitchen automate and manage their daily orders.<br>
 Provide an easy-to-use interface for both admins and staff.<br>
 Generate order reports and maintain records for future reference.<br>
-Improve customer satisfaction through efficient order processing.
+Improve customer satisfaction through efficient order processing.<br>
 
 ## 🛠️ Technologies Used
 HTML, CSS, JavaScript<br>
 PHP / Node.js / Any backend tech (update accordingly)<br>
 MySQL / MongoDB (update accordingly)<br>
-Git & GitHub for version control
+Git & GitHub for version control<br>
 
 ## 🖥 Frontend:
 
@@ -46,7 +46,7 @@ K.M.D.P.S.D.Jayathilaka - 19APC3959<br>
 K.M.Sooriyaarachchi - 19APC4029<br>
 B.P. Chamoda - 19APC4052<br>
 R.P.P.T.Rajapaksha - 19APC4083<br>
-W.H.M.M.J. Wijesinghe - 19APC4097
+W.H.M.M.J. Wijesinghe - 19APC4097<br>
 
 
 ## 📃 License
