@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <p className="text-xl font-medium mb-5">COMPANY</p>
+          <p className="text-xl font-medium mb-5">LINKS</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>Home</li>
             <li>About Us</li>
@@ -27,7 +27,7 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>+94 123 456 789</li>
-            <li>contact@forever.com</li>
+            <li>contact@rustickitchen.com</li>
           </ul>
         </div>
       </div>
@@ -35,7 +35,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className="py-5 text-sm text-center">
-          Copyright 2024 @ All Rights Reserved
+          Copyright 2025 | All Rights Reserved | RUSTIC KITCHEN
         </p>
       </div>
     </div>

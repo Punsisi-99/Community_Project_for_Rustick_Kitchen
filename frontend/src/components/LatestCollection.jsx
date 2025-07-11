@@ -14,10 +14,10 @@ const LatestCollection = () => {
   return (
     <div className="my-10">
       <div className="text-center py-8 text-3xl">
-        <Title text1={"LATEST"} text2={"COLLECTION"} />
+        <Title text1={"Fresh Menu, "} text2={"Fresh Vibes"} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600">
-          "Discover our latest collection: trendy, stylish outfits perfect for
-          every occasion. Shop the newest looks!"
+          "Introducing our latest lineup of irresistible dishes, crafted to
+          excite your taste buds."
         </p>
       </div>
 

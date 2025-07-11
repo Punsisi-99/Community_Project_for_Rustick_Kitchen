@@ -39,10 +39,10 @@ const App = () => {
     const title = routeTitles[location.pathname] || "Forever";
     document.title = title;
 
-    // Trigger loader on route change
+    // Trigger  on route change
     setIsLoading(true);
     const timer = setTimeout(() => {
-      setIsLoading(false); // Stop loader after 1 second (simulate loading)
+      setIsLoading(false); // Stop  after 1 second (simulate loading)
     }, 1000);
 
     return () => clearTimeout(timer); // Cleanup timeout

@@ -14,10 +14,9 @@ const BestSeller = () => {
   return (
     <div className="my-10">
       <div className="text-center text-3xl py-8">
-        <Title text1={"BEST"} text2={"SELLERS"} />
+        <Title text1={"Our Most"} text2={"-Loved Dishes"} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600">
-          "Explore our best sellers: popular, top-rated clothing pieces loved by
-          customers. Shop these must-have styles!"
+          "Craving the best? These dishes are everyone’s favorite for a reason."
         </p>
       </div>
 
