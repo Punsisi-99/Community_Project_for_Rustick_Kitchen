@@ -15,7 +15,10 @@ const Login = () => {
         event.preventDefault();
         try {
             if (currentState === 'Sign Up') {
-                const response = await axios.post(`${backendUrl}/api/user/register`, { name, email, password });
+                const response = await axios.post(
+                    `${backendUrl}/api/user/register`,
+                    { name, email, password }
+                );
                 if (response.data.success) {
                     setToken(response.data.token);
                     localStorage.setItem('token', response.data.token);
@@ -24,7 +27,10 @@ const Login = () => {
                     toast.error(response.data.message);
                 }
             } else {
-                const response = await axios.post(`${backendUrl}/api/user/login`, { email, password });
+                const response = await axios.post(
+                    `${backendUrl}/api/user/login`,
+                    { email, password }
+                );
                 if (response.data.success) {
                     setToken(response.data.token);
                     localStorage.setItem('token', response.data.token);
@@ -48,13 +54,17 @@ const Login = () => {
     return (
         <form
             onSubmit={onSubmitHandler}
-            className="flex flex-col w-[90%] sm:max-w-md m-auto mt-14 gap-4 text-[#0b6910]">
+            className="flex flex-col w-[90%] sm:max-w-md m-auto mt-14 gap-4 text-[#0b6910]"
+        >
             <div className="flex justify-between items-center mb-4">
-                <p className="text-2xl font-semibold text-[#068e0d]">{currentState}</p>
+                <p className="text-2xl font-semibold text-[#068e0d]">
+                    {currentState}
+                </p>
                 <button
                     type="button"
                     onClick={() => navigate('/')}
-                    className="text-2xl font-light text-[#0b6910] hover:text-[#013206]">
+                    className="text-2xl font-light text-[#0b6910] hover:text-[#013206]"
+                >
                     X
                 </button>
             </div>
@@ -64,7 +74,7 @@ const Login = () => {
                     type="text"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
-                    className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#27f526]"
+                    className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#26f56b]"
                     placeholder="Your Name"
                     required
                     autoComplete="name"
@@ -75,7 +85,7 @@ const Login = () => {
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#27f526]"
+                className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#26f56b]"
                 placeholder="Your Email"
                 required
                 autoComplete="email"
@@ -85,7 +95,7 @@ const Login = () => {
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
-                className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#27f526]"
+                className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#26f56b]"
                 placeholder="Password"
                 required
                 autoComplete="current-password"
@@ -93,13 +103,16 @@ const Login = () => {
 
             <button
                 type="submit"
-                className="bg-[#1f5721] hover:bg-[#299229] active:bg-[#247928] text-white font-medium px-4 py-2 rounded-md mt-2 transition">
+                className="bg-[#1f5721] hover:bg-[#299229] active:bg-[#247928] text-white font-medium px-4 py-2 rounded-md mt-2 transition"
+            >
                 {currentState === 'Login' ? 'Login' : 'Create Account'}
             </button>
 
             <div className="flex items-center mt-2 gap-2">
                 <input type="checkbox" required className="accent-[#134013]" />
-                <p className="text-sm">By Continuing, I agree to the terms of use & privacy policy</p>
+                <p className="text-sm">
+                    By Continuing, I agree to the terms of use & privacy policy
+                </p>
             </div>
 
             <div className="mt-2 text-sm text-[#0b6910]">
@@ -108,7 +121,8 @@ const Login = () => {
                         Create a new account?{' '}
                         <span
                             onClick={() => setCurrentState('Sign Up')}
-                            className="cursor-pointer underline hover:text-[#013206]">
+                            className="cursor-pointer underline hover:text-[#013206]"
+                        >
                             Click here
                         </span>
                     </p>
@@ -117,7 +131,8 @@ const Login = () => {
                         Already have an account?{' '}
                         <span
                             onClick={() => setCurrentState('Login')}
-                            className="cursor-pointer underline hover:text-[#013206]">
+                            className="cursor-pointer underline hover:text-[#013206]"
+                        >
                             Login here
                         </span>
                     </p>
