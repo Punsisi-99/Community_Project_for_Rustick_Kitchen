@@ -115,7 +115,7 @@ const Login = () => {
                 </p>
             </div>
 
-            <div className="mt-2 text-sm text-[#0b6910]">
+            <div className="mt-2 text-sm text-[#000000]">
                 {currentState === 'Login' ? (
                     <p>
                         Create a new account?{' '}
