@@ -50,11 +50,11 @@ const Login = () => {
             onSubmit={onSubmitHandler}
             className="flex flex-col w-[90%] sm:max-w-md m-auto mt-14 gap-4 text-[#0b6910]">
             <div className="flex justify-between items-center mb-4">
-                <p className="text-2xl font-semibold text-[#068e0d]">{currentState}</p>
+                <p className="text-2xl font-semibold text-[#429c47]">{currentState}</p>
                 <button
                     type="button"
                     onClick={() => navigate('/')}
-                    className="text-2xl font-light text-[#0b6910] hover:text-[#013206]">
+                    className="text-2xl font-light text-[#429c47] hover:text-[#013206]">
                     X
                 </button>
             </div>
@@ -64,7 +64,7 @@ const Login = () => {
                     type="text"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
-                    className="w-full py-2 px-3 border border-[#194d1a] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#27f526]"
+                    className="w-full py-2 px-3 border border-[#215922] rounded-md bg-[#c5dec3] placeholder-[#0f5815] focus:outline-none focus:border-[#27f526]"
                     placeholder="Your Name"
                     required
                     autoComplete="name"
@@ -93,7 +93,7 @@ const Login = () => {
 
             <button
                 type="submit"
-                className="bg-[#1f5721] hover:bg-[#299229] active:bg-[#247928] text-white font-medium px-4 py-2 rounded-md mt-2 transition">
+                className="bg-[#1f5721] hover:bg-[#299229] active:bg-[#1e5221] text-white font-medium px-4 py-2 rounded-md mt-2 transition">
                 {currentState === 'Login' ? 'Login' : 'Create Account'}
             </button>
 
@@ -102,7 +102,7 @@ const Login = () => {
                 <p className="text-sm">By Continuing, I agree to the terms of use & privacy policy</p>
             </div>
 
-            <div className="mt-2 text-sm text-[#0b6910]">
+            <div className="mt-2 text-sm text-[#000000]">
                 {currentState === 'Login' ? (
                     <p>
                         Create a new account?{' '}
